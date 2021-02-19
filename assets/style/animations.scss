@@ -1,0 +1,23 @@
+// .cross-fade-enter {}
+// .cross-fade-enter-active {}
+// .cross-fade-enter-to {}
+// .cross-fade-leave {}
+// .cross-fade-leave-active {}
+// .cross-fade-leave-to {}
+
+.cross-fade-enter-active, .cross-fade-leave-active {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  // transition: opacity 0.5s;
+  -webkit-transition: opacity .6s ease-in-out;
+  -moz-transition: opacity .6s ease-in-out;
+  -o-transition: opacity .6s ease-in-out;
+  transition: opacity .6s ease-in-out;
+}
+.cross-fade-enter, .cross-fade-leave, .cross-fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+.cross-fade-enter-to {
+  opacity: 1;
+}

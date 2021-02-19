@@ -1,0 +1,43 @@
+{
+  "name": "VueProject",
+  "version": "1.0.0",
+  "description": "",
+  "author": "virtualbjorn",
+  "private": true,
+  "scripts": {
+    "prebuild": "npm run rmrf",
+    "build": "cross-env NODE_ENV=production nuxt-ts build",
+    "build:staging": "npm run prebuild;cross-env NODE_ENV=production NODE_STAGING=true nuxt-ts build",
+    "postbuild": "cross-env NODE_ENV=production PRERENDER=true nuxt-ts build;node config/merge.js",
+    "postbuild:staging": "cross-env NODE_ENV=production NODE_STAGING=true PRERENDER=true nuxt-ts build;node config/merge.js",
+    "start": "cross-env NODE_ENV=development HOST=0.0.0.0 nuxt-ts",
+    "rmrf": "rimraf dist dist_render build",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^0.3.8",
+    "@nuxtjs/axios": "^5.9.5",
+    "@nuxtjs/gtm": "^2.2.3",
+    "browser-detect": "^0.2.28",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "lodash": "^4.17.15",
+    "mobile-detect": "^1.4.4",
+    "moment": "^2.26.0",
+    "nuxt": "^2.0.0",
+    "nuxt-lazy-load": "^1.2.4",
+    "nuxt-property-decorator": "^2.5.1",
+    "prerender-spa-plugin": "^3.4.0",
+    "vue-property-decorator": "^8.4.0"
+  },
+  "devDependencies": {
+    "@nuxt/typescript-build": "^0.5.6",
+    "@nuxtjs/vuetify": "^1.0.0",
+    "merge-dirs": "^0.2.1",
+    "mkdirp": "^1.0.3",
+    "nodemon": "^1.18.9",
+    "nuxt-typed-vuex": "^0.1.16",
+    "rimraf": "^3.0.2",
+    "webpack": "^4.41.6"
+  }
+}

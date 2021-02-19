@@ -1,0 +1,8 @@
+{
+	"baseUrl": "https://www.allrangetrucks.com",
+	"apiUrl": "apiURL",
+	"headers": {
+		"Accept": "application/json",
+		"Authorization": "Bearer Token"
+	}
+}

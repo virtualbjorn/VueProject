@@ -1,0 +1,305 @@
+
+.phone {
+  height: 30px;
+  width: 30px;
+  background: url("~assets/images/svg/phone.svg") no-repeat center center transparent;
+}
+
+
+.ico-close {
+  height: 23px;
+  width: 12px;
+  cursor: pointer;
+  background: url("~assets/images/svg/close.svg") no-repeat center center transparent;
+
+  &--black {
+    height: 23px;
+    width: 12px;
+    background: url("~assets/images/svg/ico-close--black.svg") no-repeat center center transparent;
+    cursor: pointer;
+  }
+  &-white {
+    height: 23px;
+    width: 12px;
+    background: url("~assets/images/svg/close-white.svg") no-repeat center center transparent;
+    cursor: pointer;
+    background-size: contain;
+  }
+}
+
+.filter-logo {
+  height: 23px;
+  width: 59px;
+  background-size: contain;
+  background: url("~assets/images/svg/filter-logo.svg") no-repeat center center transparent;
+}
+
+.filter-btn {
+  border-radius: 16px;
+  height: 32px;
+  width: 128px;
+  background-size: contain;
+  background: url("~assets/images/svg/filter-btn.svg") no-repeat center center transparent;
+}
+
+.download {
+  height: 20px;
+  width: 72px;
+  background-size: contain;
+  background: url("~assets/images/svg/download.svg") no-repeat center center transparent;
+}
+
+.ico-crash-tested {
+  width: 50px;
+  height: 42px;
+  background: url("~assets/images/crash-tested.png") no-repeat center center transparent;
+}
+.ico-expand {
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  background: url("~assets/images/svg/plus.svg") no-repeat center center transparent;
+}  
+.expanded {
+  .ico-expand {
+    background: url("~assets/images/svg/minus.svg") no-repeat center center transparent;
+  }
+}
+.ico-external-link {
+  height: 11px;
+  width: 11px;
+  background: url("~assets/images/svg/ico-external-link.svg") no-repeat center center transparent;
+}
+.ico-minus {
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  background: url("~assets/images/svg/minus.svg") no-repeat center center transparent;
+}
+.ico-pdf {
+  height: 80px;
+  width: 80px;
+  background-size: contain;
+  background: url("~assets/images/svg/icon-pdf.svg") no-repeat center center transparent;
+}
+.ico-plus {
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  background: url("~assets/images/svg/plus.svg") no-repeat center center transparent;
+}
+.ico-plus-circle {
+  height: 14px;
+  width: 14px;
+  background: url("~assets/images/svg/icon-plus-circle.svg") no-repeat center center transparent;
+
+  &--red {
+    @extend .ico-plus-circle;
+    background: url("~assets/images/svg/icon-plus-circle--red.svg") no-repeat center center transparent;
+  }
+  &--orange {
+    @extend .ico-plus-circle;
+    background: url("~assets/images/svg/plus-circle--orange.svg") no-repeat center center transparent;
+  }
+}
+.ico-quality-control {
+  width: 50px;
+  height: 42px;
+  background: url("~assets/images/quality-control.png") no-repeat center center transparent;
+}
+
+.ico-play {
+  width: 21px;
+  height: 21px;
+  background: url("~assets/images/svg/play.svg") no-repeat center center transparent;
+}
+.chevron-right {
+    width: 7px;
+    height: 13px;
+    background: url("~assets/images/svg/chevron-right.svg") no-repeat center center transparent;
+    &--lighter-black {
+      width: 8px;
+      height: 8px;
+      background: url("~assets/images/svg/chevron-right--lighter-black.svg") no-repeat center center transparent;
+    }
+    &--white {
+      background: url("~assets/images/svg/chevron-right--white.svg") no-repeat center center transparent;
+    }
+}
+
+.chevron-left {
+  width: 7px;
+  height: 13px;
+  background: url("~assets/images/svg/chevron-left.svg") no-repeat center center transparent;
+  &--white {
+    background: url("~assets/images/svg/chevron-left--white.svg") no-repeat center center transparent;
+  }
+}
+.ico-search {
+  width: 24px;
+  height: 23px;
+  background: url("~assets/images/svg/ico-search.svg") no-repeat center center transparent;
+}
+
+.chevron-right-gray {
+  width: 9px;
+  height: 9px;
+  background: url("~assets/images/svg/chevron-right-gray.svg") no-repeat center center transparent;
+}
+
+.chevron-right-red {
+  width: 8px;
+  height: 23px;
+  background: url("~assets/images/svg/chevron-right-red.svg") no-repeat center center transparent;
+}
+
+.plus-circle {
+  width: 12px;
+  height: 12px;
+  background: url("~assets/images/svg/plus-circle.svg") no-repeat center center transparent;
+}
+
+
+.facebook {
+  height: 14px;
+  width: 14px;
+  background: url("~assets/images/svg/icon-facebook.svg") no-repeat center center transparent;
+}
+.linkedIn {
+  height: 14px;
+  width: 14px;
+  background: url("~assets/images/svg/icon-linkedin.svg") no-repeat center center transparent;
+}
+.twitter {
+  height: 13px;
+  width: 16px;
+  background: url("~assets/images/svg/icon-twitter.svg") no-repeat center center transparent;
+}
+.line {
+  height: 14px;
+  width: 14px;
+  background: url("~assets/images/svg/icon-line-messaging.svg") no-repeat center center transparent;
+}
+.instagram {
+  height: 14px;
+  width: 14px;
+  background: url("~assets/images/svg/icon-instagram.svg") no-repeat center center transparent;
+}
+.viber {
+  height: 16px;
+  width: 15px;
+  background: url("~assets/images/svg/icon-viber.svg") no-repeat center center transparent;
+}
+.wechat {
+  height: 14px;
+  width: 14px;
+  background: url("~assets/images/svg/icon-wechat.svg") no-repeat center center transparent;
+}
+.mail {
+  height: 9px;
+  width: 12px;
+  background: url("~assets/images/svg/mail.svg") no-repeat center center transparent;
+}
+
+.ico_phone {
+  height: 13px;
+  width: 13px;
+  background: url("~assets/images/svg/ico_phone.svg") no-repeat center center transparent;
+}
+
+.ph-flag {
+  height: 12px;
+  width: 16px;
+  background: url("~assets/images/svg/ph-flag.svg") no-repeat center center transparent;
+}
+
+/* Truck Type Filter Icons */
+.active {
+  .ico-tractor-head  {
+    background: url("~assets/images/svg/icon-tractor-head--active.svg") no-repeat center center transparent;
+  }
+  .ico-dump-truck {
+    background: url("~assets/images/svg/icon-dump-truck--active.svg") no-repeat center center transparent;
+  }
+  .ico-wing-van {
+    background: url("~assets/images/svg/icon-wing-van--active.svg") no-repeat center center transparent;
+  }
+  .ico-cab-and-chassis {
+    background: url("~assets/images/svg/icon-cab-and-chassis--active.svg") no-repeat center center transparent;
+  }
+  .ico-cement-mixer {
+    background: url("~assets/images/svg/icon-cement-mixer--active.svg") no-repeat center center transparent;
+  }
+  .ico-trailer-truck {
+    background: url("~assets/images/svg/icon-trailer-truck--active.svg") no-repeat center center transparent;
+  }
+}
+.truck-type-icon {
+  width: 80px;
+  height: 40px;
+}
+.icon-facebook--dark {
+  width: 14px;
+  height: 14px;
+  background: url("~assets/images/svg/icon-facebook--dark.svg") no-repeat center center transparent;
+}
+.icon-instagram--dark {
+  width: 14px;
+  height: 14px;
+  background: url("~assets/images/svg/icon-instagram--dark.svg") no-repeat center center transparent;
+}
+.icon-line--dark {
+  width: 14px;
+  height: 14px;
+  background: url("~assets/images/svg/icon-line--dark.svg") no-repeat center center transparent;
+}
+.icon-linkedin--dark {
+  width: 14px;
+  height: 14px;
+  background: url("~assets/images/svg/icon-linkedin--dark.svg") no-repeat center center transparent;
+}
+.icon-twitter--dark {
+  width: 16px;
+  height: 13px;
+  background: url("~assets/images/svg/icon-twitter--dark.svg") no-repeat center center transparent;
+}
+.icon-viber--dark {
+  width: 15px;
+  height: 16px;
+  background: url("~assets/images/svg/icon-viber--dark.svg") no-repeat center center transparent;
+}
+.icon-wechat--dark {
+  width: 14px;
+  height: 14px;
+  background: url("~assets/images/svg/icon-wechat--dark.svg") no-repeat center center transparent;
+}
+.ico-tractor-head {
+  @extend .truck-type-icon;
+  background: url("~assets/images/svg/icon-tractor-head.svg") no-repeat center center transparent;
+}
+.ico-dump-truck {
+  @extend .truck-type-icon;
+  background: url("~assets/images/svg/icon-dump-truck.svg") no-repeat center center transparent;
+}
+.ico-wing-van {
+  @extend .truck-type-icon;
+  background: url("~assets/images/svg/icon-wing-van.svg") no-repeat center center transparent;
+}
+.ico-cab-and-chassis {
+  @extend .truck-type-icon;
+  background: url("~assets/images/svg/icon-cab-and-chassis.svg") no-repeat center center transparent;
+}
+.ico-cement-mixer {
+  @extend .truck-type-icon;
+  background: url("~assets/images/svg/icon-cement-mixer.svg") no-repeat center center transparent;
+}
+.ico-trailer-truck {
+  @extend .truck-type-icon;
+  background: url("~assets/images/svg/icon-trailer-truck.svg") no-repeat center center transparent;
+}
+
+// KEEP THIS PROPERTY TO THE BOTTOM ALWAYS //
+.icon {
+  display: inline-block;
+  background-size: contain;
+}

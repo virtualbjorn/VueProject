@@ -1,0 +1,815 @@
+@import "reset.scss";
+@import "_atoms.scss";
+@import "icons.scss";
+@import "fonts.scss";
+@import "animations.scss";
+
+// Global styling
+
+.main,
+html,
+body {
+  width: 100%;
+  // height: 100%;
+
+  &.lightbox-open {
+    overflow: hidden;
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.hidden {
+  display: none !important;
+  visibility: none !important;
+}
+
+.one-half,
+.one-third,
+.one-sixth {
+  width: 100%;
+}
+
+.one-whole {
+  width: 100%;
+}
+
+.bg {
+  display: none;
+}
+
+.section {
+  padding: 0 20px 38px 20px;
+  position: relative;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.home-page {
+
+  .header {
+   
+    &.is-sticky {
+      background-color: #8f0101;
+      height: auto;
+      .header__nav {
+        // background-color: #8f0101;
+         background-image: none;
+      }
+    }
+  }
+}
+.main {
+  .inquire-now-btn,
+  .inquire-now,
+  .send-message-btn,
+  .more-detail-btn {
+    transition: all ease-in-out 0.4s;
+    &:hover {
+      background-color: #8f3001;
+    }
+  }
+  .see-our-products-btn {
+    &:hover {
+      background-color: rgba(80, 67, 59, 0.1);
+    }
+  }
+}
+.header {
+  transition: top 0.2s ease-in-out;
+
+  &__nav {
+    background: url("~assets/images/banner-bg-mobile.jpg") no-repeat left top transparent;
+    position: relative;
+    display: flex;
+    padding: 12px 16px 16px 16px;
+    justify-content: space-between;
+    width: 100%;
+    transition: background-color 0.6s ease-in-out;
+  }
+
+  .header-nav-logo {
+    // display: inline-block;
+    display: flex;
+    align-items: center;
+
+  }
+
+  .logo {
+    // height: 60px;
+    // width: 88px;
+    height: 48px;
+    width: 70px;
+  }
+
+  .desktop-header-logo {
+    display: none;
+  }
+
+  .navigation-wrapper {
+    display: flex;
+    align-items: center;
+    // display: inline-block;
+    // float: right;
+  }
+
+  .navigation {
+    display: none;
+    margin: 0;
+    font-size: 14px;
+
+    li {
+      a {
+        // color: #fff;
+        text-decoration: none;
+        font-family: 'Coda', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      }
+    }
+  }
+
+  .inquire-now-btn {
+    color: #8f0101;
+    // padding: 8px 0;
+    padding: 12px 0;
+    width: 160px;
+    line-height: 1em;
+    &:hover {
+      background-color: #eeedec;
+    }
+  }
+}
+
+.social-media {
+  .number {
+    .other-number {
+      display: none;
+    }
+  }
+
+  .ph-flag-container {
+    margin-left: 10px;
+    display: inline-block;
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.menu-bar-list-wrap {
+  overflow: hidden;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all ease-in-out 0.4s;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // z-index: 11;
+}
+
+.Media-Gallery-content {
+  margin-bottom: 30px;
+
+  .media-gallery-img {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+.contactus-page {
+  
+
+  &__tilte {
+    margin-bottom: 25px;
+  }
+
+  .btn-container {
+    .send-message-btn {
+      width: 100%;
+    }
+  }
+
+  .reach-us {
+    .title {
+      margin-bottom: 20px;
+    }
+  }
+
+  .visit-us {
+    title {
+      display: none;
+    }
+
+    .visit-us-gallery {
+      // padding: 23px 0 23px 16px;
+      // height: 400px;
+    }
+  }
+}
+
+.footer {
+  padding: 37px 16px 50px 16px;
+
+  &__heading {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  &__para {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .form {
+    margin-bottom: 40px;
+  }
+
+  .form-input-cont {
+    input {
+      width: 100%;
+    }
+  }
+
+  .footer-logo {
+    margin-bottom: 36px;
+
+    .copyrights {
+      display: block;
+      text-align: center;
+    }
+
+    .footer-banner {
+      width: 100%;
+      height: 66px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .textarea-message {
+    display: block;
+    height: 172px;
+    margin-bottom: 0;
+  }
+
+  .social-media-wrapper {
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  .btn-container {
+    margin-top: 30px;
+  }
+
+  .send-message-btn {
+    background: #e3cfc1;
+    color: #8f0101;
+    width: 100%;
+    padding: 19px 0;
+    font-family: 'Coda', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    &:hover {
+      background-color: #e3dbc1;
+    }
+  }
+
+  .footer-banner {
+    width: 100%;
+    height: 66px;
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  .social-media-content {
+    margin-top: 10px;
+     font-family: 'Coda', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-align: center;
+
+    .follow-us {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .social-media-img {
+      display: none;
+    }
+
+    .social-media-wrap {
+      display: inline-block;
+      // width: 70%;
+      text-align: center;
+
+      span {
+        display: inline-block;
+        margin-right: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .terms-conditon {
+      display: none;
+    }
+  }
+
+  .footer-products-brand-about {
+    padding: 0 20px;
+
+    
+
+    .footer-widget {
+      .heading {
+        text-align: left;
+      }
+
+      span {
+        margin-bottom: 10px;
+      }
+
+      &:nth-child(1) {
+        display: inline-block;
+        width: 48%;
+      }
+
+      &:nth-child(2) {
+        display: inline-block;
+        width: 48%;
+        vertical-align:  top;
+      }
+    }
+
+    .footer-about {
+      margin-top: 35px;
+    }
+  }
+
+  .disclaimer-text{
+    margin: 10px auto;
+    max-width: 315px;
+    span{
+      line-height: 1.5em;
+      margin: 5px 0;
+    }
+  }
+}
+
+.footer-bg {
+  background: url("~assets/images/footer-bg-mobile.jpg") no-repeat center center transparent;
+  background-size: cover;
+  // background-size: 102%;
+}
+
+.footer-widget {
+  .footer-widget__link {
+    &:first-of-type {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.home-page {
+  .header {
+    position: sticky;
+    left: 0;
+    top: 0;
+
+    .logo {
+      height: 60px;
+      width: 86px;
+    }
+    &.is-sticky {
+      .inquire-now-btn {
+        padding: 12px 0;
+      }
+      .logo {
+        height: 48px;
+        width: 70px;
+      }
+    }
+  }
+
+  .inquire-now-btn {
+    padding: 16px 0 17px;
+  }
+
+  .navigation {
+    font-size: 16px;
+  }
+  .product-result-content {
+    background: #fff;
+  }
+}
+
+body:not(.home-page) {
+  .header {
+    position: sticky;
+    top: 0;
+    background: #8f0101;
+    &__nav {
+      background: none;
+      // background: #8f0101;
+    }
+  }
+}
+
+#__nuxt {
+  margin-top: -6px;
+}
+
+// V-Carousel classes
+.v-window__prev {
+  left: 0;
+}
+
+.v-window__next {
+  right: 0;
+}
+
+.v-window__prev,
+.v-window__next {
+  margin: 0 12px;
+
+  button {
+    background-color: #fff !important;
+  }
+}
+.v-window__container {
+  .v-window__prev,
+  .v-window__next {
+    top: 60%;
+  }
+}
+.v-btn--icon {
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,.25);
+}
+
+
+.slider {
+  &__item-container {
+    iframe {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+  .v-window__prev,
+  .v-window__next {
+    margin: 0 12px;
+  }
+}
+
+.available-upon-request {
+  font-size: 13px;
+}
+
+.prev-btn,
+.next-btn {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.prev-btn {
+  left: 0;
+}
+
+.next-btn {
+  right: 0;
+}
+
+.lightbox-enter-active,
+.lightbox-leave-active {
+  transition: opacity .25s;
+}
+
+.lightbox-enter,
+.lightbox-leave-to
+
+/* .lightbox-leave-active below version 2.1.8 */
+  {
+  opacity: 0;
+}
+
+/* V-Expansion Panels */
+.v-expansion-panels {
+  margin-bottom: 58px;
+
+  .v-expansion-panel-content__wrap {
+    padding: 0;
+  }
+}
+
+/* YouTube Thumbnail */
+.thumbnail {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 127px;
+  height: 85px;
+  img {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    object-fit: contain;
+  }
+  .ico-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Inquiry Thank You Component */
+.inquiry-thank-you {
+  &__wrapper {
+    // padding: 100px 0 200px 0;
+    padding: 0 0 100px;
+  }
+  &__container {
+    .dismiss-btn {
+      background: #e3cfc1;
+      color: #8f0101;
+      width: 100%;
+      padding: 19px 0;
+      font-family: "Coda", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    .btn-container {
+      margin-top: 50px;
+    }
+  }
+}
+.phone-sticky-contact {
+  text-decoration: none;
+}
+.branches-content,
+.contact-number,
+.information,
+.heading-content,.email {
+  a {
+    text-decoration: none;
+  }
+}
+.social-media-wrap {
+  background: #1f1919;
+}
+@media (min-width: 480px) {
+  .social-media {
+    z-index: 1;
+    position: relative;
+    // background: #1f1919;
+    padding: 13px 20px 14px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 48px;
+
+    .email-number {
+      display: flex;
+      flex-direction: row;
+    }
+
+    span {
+      font-size: 13px;
+      line-height: 13px;
+    }
+
+    .email {
+      margin-right: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      
+      .mail {
+        height: 9px;
+        width: 12px;
+      }
+
+      span {
+        font-size: 12px;
+      }
+    }
+
+    &__icon-container {
+      display: inline-block;
+      float: right;
+
+      .social-media-icon {
+        display: inline-block;
+        width: auto;
+        height: 18px;
+
+        .facebook {
+          height: 14px;
+          width: 14px;
+        }
+
+        .linkedIn {
+          height: 14px;
+          width: 14px;
+        }
+
+        .twitter {
+          height: 13px;
+          width: 16px;
+        }
+
+        .line {
+          height: 14px;
+          width: 14px;
+        }
+
+        .instagram {
+          height: 14px;
+          width: 14px;
+        }
+
+        .viber {
+          height: 16px;
+          width: 15px;
+        }
+
+        .wechat {
+          height: 14px;
+          width: 14px;
+        }
+      }
+
+      .search {
+        display: none;
+      }
+
+      .follow-us {
+        display: none;
+      }
+    }
+
+    .mail {
+      margin-right: 10px;
+    }
+
+    .ico_phone {
+      margin-right: 5px;
+      height: 13px;
+      width: 13px;
+    }
+
+    .number {
+      a {
+        color: #fff;
+        font-size: 12px;
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .social-media {
+    background: #1f1919;
+    padding: 13px 10px 14px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 48px;
+
+    .email-number {
+      display: flex;
+      flex-direction: row;
+    }
+
+    span {
+      font-size: 13px;
+      line-height: 13px;
+    }
+
+    .email {
+      margin-right: 10px;
+
+      .mail {
+        height: 8px;
+        width: 11px;
+      }
+
+      span {
+        font-size: 9px;
+      }
+    }
+
+    &__icon-container {
+      display: inline-block;
+      float: right;
+
+      .social-media-icon {
+        display: inline-block;
+        width: auto;
+        height: 18px;
+
+        .facebook {
+          height: 11px;
+          width: 11px;
+        }
+
+        .linkedIn {
+          height: 11px;
+          width: 11px;
+        }
+
+        .twitter {
+          height: 10px;
+          width: 13px;
+        }
+
+        .line {
+          height: 11px;
+          width: 11px;
+        }
+
+        .instagram {
+          height: 11px;
+          width: 11px;
+        }
+
+        .viber {
+          height: 13px;
+          width: 12px;
+        }
+
+        .wechat {
+          height: 11px;
+          width: 11px;
+        }
+      }
+
+      .search {
+        display: none;
+      }
+
+      .follow-us {
+        display: none;
+      }
+    }
+
+    .mail {
+      margin-right: 5px;
+    }
+
+    .ico_phone {
+      margin-right: 5px;
+      height: 12px;
+      width: 12px;
+    }
+
+    .number {
+      a {
+        font-size: 9px;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 568px) and (orientation: landscape) {
+  .header__nav {
+    background-size: cover;
+  }
+}
+
+
+@import "desktop";
+@import "tablet";
